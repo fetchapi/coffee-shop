@@ -22,7 +22,7 @@ function User() {
   useEffect(() => {
     (async () => {
       await axios
-        .get("http://localhost:3000/user/getuser", {
+        .get("http://localhost:5000/user/getuser", {
           headers: {
             "x-access-token": `${localStorage.getItem("access-token")}`,
           },

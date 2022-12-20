@@ -20,7 +20,7 @@ function Basket() {
 
   const getCart = async () => {
     await axios
-      .get("http://localhost:3000/cart/getitems", {
+      .get("http://localhost:5000/cart/getitems", {
         headers: {
           "x-access-token": `${localStorage.getItem("access-token")}`,
         },
@@ -66,7 +66,7 @@ function Basket() {
     if ((inc === false && inputValue > 1) || inc === true) {
       await axios
         .post(
-          "http://localhost:3000/cart/additem",
+          "http://localhost:5000/cart/additem",
           { product_id: productId, quantity: inc ? 1 : -1 },
           {
             headers: {
@@ -87,7 +87,7 @@ function Basket() {
   const removeItem = async (productId) => {
     await axios
       .post(
-        "http://localhost:3000/cart/removeitem",
+        "http://localhost:5000/cart/removeitem",
         { product_id: productId },
         {
           headers: {

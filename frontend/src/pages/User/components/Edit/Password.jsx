@@ -39,7 +39,7 @@ function Password() {
     validateOnChange: validateAfterSubmit,
     onSubmit: async (values, { resetForm }) => {
       await axios
-        .post("http://localhost:3000/user/changepassword", values, {
+        .post("http://localhost:5000/user/changepassword", values, {
           headers: {
             "x-access-token": `${localStorage.getItem("access-token")}`,
           },

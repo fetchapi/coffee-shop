@@ -15,7 +15,7 @@ function Shop() {
   useEffect(() => {
     (async () => {
       await axios
-        .get("http://localhost:3000/product/getproducts")
+        .get("http://localhost:5000/product/getproducts")
         .then((resp) => {
           setProducts(resp.data.products);
         })
@@ -29,7 +29,7 @@ function Shop() {
 
   const getCart = async () => {
     await axios
-      .get("http://localhost:3000/cart/getitems", {
+      .get("http://localhost:5000/cart/getitems", {
         headers: {
           "x-access-token": `${localStorage.getItem("access-token")}`,
         },
@@ -46,7 +46,7 @@ function Shop() {
   const addToCart = async (productId) => {
     await axios
       .post(
-        "http://localhost:3000/cart/additem",
+        "http://localhost:5000/cart/additem",
         { product_id: productId, quantity: 1 },
         {
           headers: {
@@ -77,7 +77,7 @@ function Shop() {
           return (
             <ShopItem
               key={product._id}
-              img={`http://localhost:3000/product/${product.productImage}`}
+              img={`http://localhost:5000/product/${product.productImage}`}
               name={product.name}
               price={product.price}
               quantity={cartProducts[index] ? cartProducts[index].quantity : ""}

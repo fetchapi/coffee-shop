@@ -46,7 +46,7 @@ function RegisterForm() {
     validateOnChange: validateAfterSubmit,
     onSubmit: async (values, { resetForm }) => {
       await axios
-        .post("http://localhost:3000/user/signup", values)
+        .post("http://localhost:5000/user/signup", values)
         .then((resp) => {
           localStorage.setItem("access-token", resp.data.token);
           resetForm();

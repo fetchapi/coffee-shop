@@ -34,7 +34,7 @@ function Email() {
     validateOnChange: validateAfterSubmit,
     onSubmit: async (values, { resetForm }) => {
       await axios
-        .post("http://localhost:3000/user/changemail", values, {
+        .post("http://localhost:5000/user/changemail", values, {
           headers: {
             "x-access-token": `${localStorage.getItem("access-token")}`,
           },
