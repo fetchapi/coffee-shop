@@ -28,16 +28,16 @@ function Navigation() {
         } md:flex`}
       >
         <Link to="/shop" className="p-5 lg:p-7 nav-item">
-          Dükkan
+          Cửa hàng
         </Link>
         <Link to="/about" className="p-5 lg:p-7 nav-item">
-          Hakkımızda
+          Về chúng tôi
         </Link>
         <Link to="/blog" className="p-5 lg:p-7 nav-item">
           Blog
         </Link>
         <Link to="/contact" className="p-5 lg:p-7 nav-item">
-          İletişim
+          Liên lạc
         </Link>
       </div>
     </>

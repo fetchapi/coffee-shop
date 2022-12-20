@@ -8,19 +8,19 @@ function userMenu() {
         to="/user/profile"
         className="py-2.5 md:py-2 hover:bg-[#cda154] w-full"
       >
-        Profil
+        Hồ sơ
       </Link>
       <Link
         to="/user/orders"
         className="py-2.5 md:py-2 hover:bg-[#cda154] w-full"
       >
-        Siparişlerim
+        Đơn đặt hàng của tôi
       </Link>
       <Link
         to="/user/edit"
         className="py-2.5 md:py-2 hover:bg-[#cda154] w-full"
       >
-        Bilgileri Düzenle
+        Chỉnh sửa thông tin
       </Link>
     </div>
   );

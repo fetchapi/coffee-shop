@@ -21,8 +21,8 @@ function Address() {
     },
     validationSchema: Yup.object({
       address: Yup.string()
-        .max(254, "Adres 254 karakterden az olmalı.")
-        .required("Bu alan zorunludur.")
+        .max(254, "Địa chỉ phải ít hơn 254 ký tự.")
+        .required("Trường này là bắt buộc.")
     }),
     validateOnChange: validateAfterSubmit,
     onSubmit: async (values, { resetForm }) => {
@@ -68,7 +68,7 @@ function Address() {
             </small>
           ) : null}
           <TextAreaField
-            label="Adres"
+            label="Địa chỉ nhà"
             name="address"
             value={formik.values.address}
             onChange={formik.handleChange}
@@ -81,7 +81,7 @@ function Address() {
         </div>
         <div>
           <Button
-            name="Ekle / Değiştir"
+            name="Thêm/Sửa đổi"
             onClick={() => {
               setValidateAfterSubmit(true);
             }}

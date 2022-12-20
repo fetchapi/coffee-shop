@@ -22,14 +22,14 @@ function Email() {
     },
     validationSchema: Yup.object({
       email: Yup.string()
-        .max(254, "E-mail 254 karakterden az olmalı.")
-        .email("Geçersiz mail adresi.")
-        .required("Bu alan zorunludur."),
+        .max(254, "Email phải ít hơn 254 ký tự.")
+        .email("Địa chỉ email không hợp lệ.")
+        .required("Trường này là bắt buộc."),
       emailConfirm: Yup.string()
-        .max(254, "E-mail 254 karakterden az olmalı.")
-        .oneOf([Yup.ref("email"), null], "Mail adresleri uyuşmuyor.")
-        .email("Geçersiz mail adresi.")
-        .required("Bu alan zorunludur."),
+        .max(254, "Email phải ít hơn 254 ký tự.")
+        .oneOf([Yup.ref("email"), null], "Địa chỉ email không khớp.")
+        .email("Địa chỉ email không hợp lệ.")
+        .required("Trường này là bắt buộc."),
     }),
     validateOnChange: validateAfterSubmit,
     onSubmit: async (values, { resetForm }) => {
@@ -104,7 +104,7 @@ function Email() {
         </div>
         <div>
           <Button
-            name="Değiştir"
+            name="Biến đổi"
             onClick={() => {
               setValidateAfterSubmit(true);
             }}

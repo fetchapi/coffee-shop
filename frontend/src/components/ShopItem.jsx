@@ -24,7 +24,7 @@ function ShopItem({ button = true, isInCart = false, ...props }) {
           {props.name}
         </span>
         <span className="text-xs md:text-base text-white font-medium">
-          {props.price} TL
+          {props.price} VNĐ
         </span>
       </div>
       {button === true && (
@@ -33,7 +33,7 @@ function ShopItem({ button = true, isInCart = false, ...props }) {
             className="py-4 text-white text-sm md:text-base w-full block border-t hover:border-t-[#cda154] border-white hover:bg-[#cda154] hover:text-black font-medium duration-500"
             onClick={props.onClick}
           >
-            Sepete ekle
+            Thêm vào giỏ
           </button>
         </div>
       )}

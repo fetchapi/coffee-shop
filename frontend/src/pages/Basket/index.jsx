@@ -108,16 +108,16 @@ function Basket() {
     <MainLayout>
       <div className="flex flex-col md:flex-row py-8 px-4 md:px-12 gap-4 justify-center">
         <div className="border-[1.6px] py-6 rounded-xl w-full md:w-1/2 text-white">
-          <h1 className="text-lg md:text-xl font-semibold px-5">Sepetim</h1>
+          <h1 className="text-lg md:text-xl font-semibold px-5">Giỏ hàng của tôi</h1>
           <div className=" h-[420px] overflow-y-auto">
             {cartProducts.length === 0 && (
               <h1 className="text-base mt-6 w-full text-center">
-                Sepetinizde hiç ürün yok.
+                Bạn không có bất kỳ mặt hàng nào trong giỏ hàng của bạn.
               </h1>
             )}
             {sum < 200 && cartProducts.length !== 0 && (
               <h1 className="text-sm w-full text-center bg-red-500">
-                Ücretsiz kargo için {(200 - sum).toFixed(2)} tutarında ürün eklemelisiniz.
+                Để được giao hàng miễn phí, bạn phải thêm sản phẩm {(200 - sum).toFixed(2)}.
               </h1>
             )}
             {cartProducts.map((item) => {
@@ -140,15 +140,15 @@ function Basket() {
           </div>
         </div>
         <div className="border-[1.6px] h-64 p-6 rounded-xl w-full md:w-80 lg:w-96 text-white flex flex-col whitespace-nowrap">
-          <h1 className="text-lg md:text-xl font-semibold">Sipariş Özeti</h1>
+          <h1 className="text-lg md:text-xl font-semibold">Tóm tắt theo thứ tự</h1>
           <ul className="py-3 text-sm border-b border-[#cda154]">
             <li className="flex justify-between">
-              <span>Ürün toplam:</span>
-              <b>{sum.toFixed(2)} TL</b>
+              <span>Tổng sản phẩm:</span>
+              <b>{sum.toFixed(2)} VNĐ</b>
             </li>
             {cartProducts.length !== 0 && (
               <li className="flex justify-between">
-                <span>Kargo toplam:</span>
+                <span>Tổng vận chuyển:</span>
                 <b>{shippingPrice} TL</b>
               </li>
             )}
@@ -159,7 +159,7 @@ function Basket() {
                     title="200 TL ve Üzeri Kargo Bedava"
                     className="w-40 overflow-hidden text-ellipsis"
                   >
-                    200 TL ve Üzeri Kargo Bedava
+                    200 VNĐ trở lên Giao hàng miễn phí
                   </span>
                   <b>-{shippingPrice} TL</b>
                 </li>

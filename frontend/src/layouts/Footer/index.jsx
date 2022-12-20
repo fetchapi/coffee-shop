@@ -12,7 +12,7 @@ function Footer() {
       <div className="flex flex-col md:flex-row justify-start md:justify-evenly py-6 gap-6">
         <div className="flex flex-col gap-2">
           <h1 className="text-base font-semibold text-gray-600">
-            Sosyal Medya
+            Truyền thông xã hội
           </h1>
           <div className="flex gap-2 text-white">
             <a
@@ -42,7 +42,7 @@ function Footer() {
         </div>
         <div className="flex flex-col gap-2">
           <h1 className="text-base font-semibold text-gray-600">
-            Çok satanlar
+            Bán chạy nhất
           </h1>
           <div className="flex flex-col text-sm md:text-base text-white">
             <Link to="" className="py-2 hover:text-[#cda154]">
@@ -52,15 +52,15 @@ function Footer() {
               The Coffee 1kg
             </Link>
             <Link to="" className="py-2 hover:text-[#cda154]">
-              The Coffee French Press seti
+              The Coffee French Press set
             </Link>
             <Link to="" className="py-2 hover:text-[#cda154]">
-              The Coffee Başlangıç Seti
+              The Coffee Starter Set
             </Link>
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <h1 className="text-base font-semibold text-gray-600">Öğren</h1>
+          <h1 className="text-base font-semibold text-gray-600">Học hỏi</h1>
           <div className="flex flex-col text-sm md:text-base text-white">
             <Link to="/blog" className="py-2 hover:text-[#cda154]">
               Blog
@@ -68,25 +68,25 @@ function Footer() {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <h1 className="text-base font-semibold text-gray-600">Kurumsal</h1>
+          <h1 className="text-base font-semibold text-gray-600">Thể chế</h1>
           <div className="flex flex-col text-sm md:text-base text-white">
             <Link to="/about" className="py-2 hover:text-[#cda154]">
-              Hakkımızda
+              Về chúng tôi
             </Link>
             <Link to="/contact" className="py-2 hover:text-[#cda154]">
-              İletişim
+              Liên lạc
             </Link>
           </div>
         </div>
         {isLoggedIn && (
           <div className="flex flex-col gap-2">
-            <h1 className="text-base font-semibold text-gray-600">Hesabım</h1>
+            <h1 className="text-base font-semibold text-gray-600">Tài khoản của tôi</h1>
             <div className="flex flex-col text-sm md:text-base text-white">
               <Link to="/user/profile" className="py-2 hover:text-[#cda154]">
-                Profil
+                Hồ sơ
               </Link>
               <Link to="/user/orders" className="py-2 hover:text-[#cda154]">
-                Siparişlerim
+                Đơn đặt hàng của tôi
               </Link>
             </div>
           </div>
@@ -98,10 +98,10 @@ function Footer() {
           Github:{" "}
           <a
             target="_blank"
-            href="https://github.com/frknsprnl"
+            href="https://github.com/huynhit24"
             className="hover:underline hover:text-[#cda154]"
           >
-            frknsprnl
+            huynhit24
           </a>
         </span>
       </div>

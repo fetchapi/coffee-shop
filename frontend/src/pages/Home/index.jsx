@@ -20,10 +20,10 @@ function Home() {
         <div className="text-white w-full flex flex-1 flex-col text-center justify-center ">
           <Fade top>
             <h1 className="text-3xl lg:text-5xl font-medium py-3">
-              Dünyanın En Güçlü Kahvesi!
+              Cà phê mạnh nhất thế giới!
             </h1>
             <span className="text-xl md:text-4xl font-normal text-[#cda154] py-3">
-              YÜKSEK KAFEİN, RAHAT İÇİM
+              Caffeine CAO, UỐNG THOẢI MÁI
             </span>
           </Fade>
           <Fade left>
@@ -42,13 +42,13 @@ function Home() {
           <Fade left>
             <div className="py-8 px-24 hidden lg:block">
               <span className="text-center">
-                2016 yılında, %100 doğal bir şekilde yüksek kafeini yumuşak bir
-                içimle sunabileceğimiz özel bir kahve yapmak için
-                çalışmalarımızı başlattık. Uzun çalışmaların ve sayısız
-                denemelerin ardından aradığımız eşsiz kahve harmanımızı bulduk
-                ve İsviçre merkezli SGS Gıda Kontrol Laboratuvarı’na kafein
-                testine gönderdik. Ve sonuç beklediğimiz gibi: The Coffee,
-                dünyanın açık ara en güçlü kahvesi!
+                Năm 2016, nước giải khát 100% cafein cao tự nhiên
+                để pha một loại cà phê đặc biệt mà chúng tôi có thể phục vụ với đồ uống của tôi
+                Chúng tôi bắt đầu công việc của mình. Công việc lâu dài và nhiều
+                Sau khi thử, chúng tôi đã tìm thấy sự pha trộn cà phê độc đáo mà chúng tôi đang tìm kiếm.
+                và caffein cho Phòng thí nghiệm kiểm soát thực phẩm SGS có trụ sở tại Thụy Sĩ.
+                Chúng tôi đã gửi nó để thử nghiệm. Và kết quả đúng như chúng ta mong đợi: The Coffee,
+                Cho đến nay cà phê mạnh nhất trên thế giới!
               </span>
             </div>
           </Fade>
@@ -72,7 +72,7 @@ function Home() {
       </div>
       <div className="py-4 md:py-4 px-4 md:px-8">
         <h1 className="text-[#cda154] text-lg md:text-2xl text-center py-2">
-          -En Çok Satın Alınan Ürünler-
+          -Sản phẩm được mua nhiều nhất-
         </h1>
         <Fade right>
           <div className="flex flex-col md:flex-row gap-4 items-center justify-center py-6">
@@ -112,13 +112,13 @@ function Home() {
           <Fade top>
             <div className="flex flex-col items-center w-full py-6 md:py-0">
               <h1 className="text-[#cda154] text-base md:text-xl">
-                - En Güçlü Kahve -
+                - Cà Phê Mạnh Nhất -
               </h1>
-              <h1 className="text-white text-2xl md:text-3xl">%100 Doğal</h1>
+              <h1 className="text-white text-2xl md:text-3xl">100% tự nhiên</h1>
               <p className="text-white py-4 md:py-6 text-sm md:text-lg leading-7 md:leading-9 text-center max-w-xl">
-                The Coffee'nin yüksek kafein oranı, harmanındaki kahve
-                çekirdeklerinden gelir. Kahvelerimize herhangi bir kimyasal
-                işlem uygulanmamıştır ve içerisine katkı maddesi eklenmemiştir.
+                Cà phê có hàm lượng caffein cao, cà phê trong hỗn hợp của nó
+                Nó đến từ các hạt nhân. Không thêm bất kỳ hóa chất nào vào cà phê của chúng tôi.
+                Không có quy trình nào được áp dụng và không có chất phụ gia nào được thêm vào.
               </p>
             </div>
           </Fade>
@@ -127,15 +127,15 @@ function Home() {
           <Fade top>
             <div className="flex flex-col items-center w-full py-6 md:py-0 order-2 md:order-1">
               <h1 className="text-[#cda154] text-base md:text-xl">
-                - En Taze Kahve -
+                - Cà Phê Tươi Ngon Nhất -
               </h1>
               <h1 className="text-white text-2xl md:text-3xl">
-                Haftalık Kahve
+                Cà phê hàng tuần
               </h1>
               <p className="text-white py-4 md:py-6 text-sm md:text-lg leading-7 md:leading-9 text-center max-w-xl">
-                Eskişehir'de yer alan kahve fabrikamızda kahvelerimizi haftalık
-                olarak kavuruyor, sipariş üzerine öğütüyor ve en taze haliyle
-                gönderiyoruz.
+                Chúng tôi giao cà phê hàng tuần tại nhà máy cà phê của chúng tôi ở Eskişehir.
+                Nó được rang, xay theo yêu cầu và ở dạng tươi nhất.
+                chúng tôi gửi.
               </p>
             </div>
           </Fade>
@@ -158,15 +158,15 @@ function Home() {
           <Fade top>
             <div className="flex flex-col items-center w-full py-6 md:py-0">
               <h1 className="text-[#cda154] text-base md:text-xl">
-                - Hızlı ve Ücretsiz Kargo -
+                - Vận chuyển nhanh chóng và miễn phí -
               </h1>
               <h1 className="text-white text-2xl md:text-3xl">
-                Sorunsuz Teslimat
+                Giao hàng tận nơi miễn phí
               </h1>
               <p className="text-white py-4 md:py-6 text-sm md:text-lg leading-7 md:leading-9 text-center max-w-xl">
-                Hafta içi saat 14.00’e kadar verilen siparişleri aynı gün
-                kargoya teslim ediyoruz. Sevkiyat sırasında meydana gelebilecek
-                problemleri profesyonel destek ekibimizle çözüme kavuşturuyoruz.
+                Các đơn hàng đặt trước 14h các ngày trong tuần đều được tính trong ngày.
+                Chúng tôi cung cấp cho hàng hóa. có thể xảy ra trong quá trình vận chuyển.
+                Chúng tôi giải quyết vấn đề với đội ngũ hỗ trợ chuyên nghiệp của chúng tôi.
               </p>
             </div>
           </Fade>

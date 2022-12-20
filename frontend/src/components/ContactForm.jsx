@@ -22,17 +22,17 @@ function ContactForm() {
     },
     validationSchema: Yup.object({
       name: Yup.string()
-        .max(20, "İsim 20 karakterden az olmalı.")
-        .required("Bu alan zorunludur."),
+        .max(20, "Tên phải ít hơn 20 ký tự.")
+        .required("Trường này là bắt buộc."),
       surname: Yup.string()
-        .max(20, "Soyad 20 karakterden az olmalı.")
-        .required("Bu alan zorunludur."),
+        .max(20, "Họ phải ít hơn 20 ký tự.")
+        .required("Trường này là bắt buộc."),
       email: Yup.string()
-        .email("Geçersiz mail adresi.")
-        .required("Bu alan zorunludur."),
+        .email("Địa chỉ email không hợp lệ.")
+        .required("Trường này là bắt buộc."),
       message: Yup.string()
-        .max(500, "Mesaj 500 karakteri geçemez.")
-        .required("Bu alan zorunludur."),
+        .max(500, "Tin nhắn không được vượt quá 500 ký tự.")
+        .required("Trường này là bắt buộc."),
     }),
     validateOnChange: validateAfterSubmit,
     onSubmit: async (values, { resetForm }) => {

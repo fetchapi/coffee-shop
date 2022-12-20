@@ -21,7 +21,17 @@ function Order() {
           </div>
           <div className="flex flex-col items-center">
             <span className="text-sm font-medium">Tutar</span>
-            <span className="text-xs">199.99 TL</span>
+            <span className="text-xs">199.99 VNĐ</span>
+          </div>
+        </a>
+        <a href="" className="flex justify-between items-center px-4 py-3 rounded-xl border-[1.6px] hover:border-[#cda154]">
+          <img src={image} alt="" className="w-10 md:w-12" />
+          <div className="flex flex-1 text-white justify-center items-center">
+            <span className="text-sm font-medium">02.09.2022</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-sm font-medium">Số lượng</span>
+            <span className="text-xs">199.99 VNĐ</span>
           </div>
         </a>
         <a href="" className="flex justify-between items-center px-4 py-3 rounded-xl border-[1.6px] hover:border-[#cda154]">
@@ -31,7 +41,7 @@ function Order() {
           </div>
           <div className="flex flex-col items-center">
             <span className="text-sm font-medium">Tutar</span>
-            <span className="text-xs">199.99 TL</span>
+            <span className="text-xs">199.99 VNĐ</span>
           </div>
         </a>
         <a href="" className="flex justify-between items-center px-4 py-3 rounded-xl border-[1.6px] hover:border-[#cda154]">
@@ -41,17 +51,7 @@ function Order() {
           </div>
           <div className="flex flex-col items-center">
             <span className="text-sm font-medium">Tutar</span>
-            <span className="text-xs">199.99 TL</span>
-          </div>
-        </a>
-        <a href="" className="flex justify-between items-center px-4 py-3 rounded-xl border-[1.6px] hover:border-[#cda154]">
-          <img src={image} alt="" className="w-10 md:w-12" />
-          <div className="flex flex-1 text-white justify-center items-center">
-            <span className="text-sm font-medium">02.09.2022</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-sm font-medium">Tutar</span>
-            <span className="text-xs">199.99 TL</span>
+            <span className="text-xs">199.99 VNĐ</span>
           </div>
         </a>
       </div>

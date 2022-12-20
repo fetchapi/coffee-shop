@@ -12,21 +12,21 @@ function About() {
           </h1>
           <div className="flex flex-col">
             <span className="text-sm md:text-base">
-              Uyandırmaya gücü yetemeyen kahvelere bir tepki olarak Türkiye’nin
-              ilk yüksek kafeinli kahve markası The Coffee Shop'u 2017 senesinde
-              kurduk.
+              Như một phản ứng đối với những loại cà phê không thể thức dậy, Thổ Nhĩ Kỳ
+              Thương hiệu cà phê có hàm lượng caffein cao đầu tiên, The Coffee Shop, được ra mắt vào năm 2017.
+              chúng tôi thành lập.
             </span>
             <span className="text-sm md:text-base mt-4">
-              Ayılmanın saatler sürdüğü sabahlar, uykudan erken sonlanan geceler
-              ve kahve bağımlılığımız bizi saatler boyu ayakta tutacak bir
-              kahvenin arayışına soktu. Bulamayınca biz yapalım dedik. Ama hafif
-              bir içimle. Aylarca uğraştık, eğitimler aldık, denemeler yaptık.
-              Sonunda aradığımızı yaptık. Dünyanın en yüksek kafeinli kahvesini
-              rahat bir içimle sunduk.
+              Buổi sáng phải mất hàng giờ để tỉnh táo, đêm kết thúc trước khi ngủ
+              và chứng nghiện cà phê của chúng ta là thứ sẽ khiến chúng ta tiếp tục hàng giờ.
+              Trong việc tìm kiếm cà phê. Khi chúng tôi không thể tìm thấy nó, chúng tôi quyết định làm điều đó. nhưng ánh sáng
+              với một thức uống. Chúng tôi đã đấu tranh trong nhiều tháng, chúng tôi đã luyện tập, chúng tôi đã cố gắng.
+              Cuối cùng chúng tôi đã làm những gì chúng tôi đang tìm kiếm. Cà phê có hàm lượng caffein cao nhất thế giới
+              Chúng tôi trình bày nó với một thức uống thoải mái.
             </span>
           </div>
           <h1 className="text-2xl md:text-3xl text-center mt-8 mb-4">
-            Dünyanın En Güçlü Kahvesi
+            Cà phê mạnh nhất thế giới
           </h1>
           <div className="flex flex-col justify-center">
             <img
@@ -36,22 +36,22 @@ function About() {
             />
 
             <span className="text-sm md:text-base">
-              Gıda Tarım Bakanlığının ve tüm dünyada geçerliliği olan İsviçre
-              merkezli SGS Laboratuvarı'nın yaptığı testler sonucu The Coffee,
-              kilogram başında <span className="font-bold">23,2 gram</span>{" "}
-              kafein oranıyla rakiplerinin çok ötesinde, dünyanın en yüksek
-              kafein oranına sahip kahvesi olarak zirvede bulunuyor. Bu test
-              sürecini detaylıca öğrenmek için linke tıklayabilirsiniz.
+              Bộ Lương thực và Nông nghiệp Thụy Sĩ và có giá trị trên toàn thế giới.
+              Là kết quả của các thử nghiệm được thực hiện bởi Phòng thí nghiệm SGS có trụ sở tại The Coffee,
+              mỗi kilôgam <span className="font-bold">23,2 gam</span>{" "}
+              hàm lượng caffein cao nhất thế giới, vượt xa các đối thủ cạnh tranh.
+              Nó đứng đầu trong số các loại cà phê có hàm lượng caffein. bài kiểm tra này
+              Bạn có thể nhấp vào liên kết để tìm hiểu quy trình chi tiết.
             </span>
 
             <span className="text-sm md:text-base mt-4">
-              Sahip olduğu bu yüksek kafein ise tamamiyle kullanılan
-              çekirdeklerin yapısal özelliklerinden geliyor. Hiçbir şekilde
-              kimyasal işlem görmeyen ve katkı maddesi içermeyen The Coffee{" "}
-              <span className="font-bold">%100 doğal </span>
-              haliyle sizlere sunuluyor. Yumuşak içimi ve sahip olduğu
-              aromasıyla da tüm kahveseverlerin beğenisini kazanarak lezzet ve
-              enerjiyi bir arada sunuyor.
+              Hàm lượng caffeine cao này hoàn toàn được sử dụng.
+              xuất phát từ đặc tính cấu tạo của hạt nhân. Không còn cách nào khác
+              Cà phê{" "}
+              <span className="font-bold">100% tự nhiên </span>
+              trình bày cho bạn như là. Nước giải khát của nó và
+              Với hương thơm của nó, nó đã giành được sự đánh giá cao của tất cả những người yêu thích cà phê và
+              cung cấp năng lượng với nhau.
             </span>
           </div>
           <h1 className="text-2xl md:text-3xl text-center mt-8 mb-4">
@@ -59,24 +59,24 @@ function About() {
           </h1>
           <div className="flex flex-col justify-center">
             <span className="text-sm md:text-base">
-              Yüksek kafein oranını rahat bir içimle sunduğumuz The Coffee’mizi
-              uzun bir kavrum maratonu sonrası 25 farklı çekirdeğin arasından
-              denediğimiz harmanlar sonrası belirledik. Güney Amerika - Pasifik
-              harmanına karar verildi. Kuruluşundan bu yana içilen 5 milyon
-              fincan The Coffee sonucunda ise içenlerden yüksek kafeinin etkisi
-              ve bu kafein oranına rağmen lezzeti ve rahat içim sunmasının
-              verdiği şaşkınlık yapılan yorumların çok büyük bir kısmını
-              oluşturdu.
+              Chúng tôi cung cấp The Coffee, loại cà phê có hàm lượng caffein cao với thức uống thoải mái.
+              trong số 25 loại hạt khác nhau sau một cuộc đua marathon dài
+              Chúng tôi xác định sau khi pha trộn chúng tôi đã thử. Nam Mỹ - Thái Bình Dương
+              hỗn hợp đã được quyết định. 5 triệu hút kể từ khi thành lập
+              Hậu quả của ly The Coffee ảnh hưởng của lượng caffein cao đến người uống
+              Và mặc dù hàm lượng caffein này, nó mang lại hương vị và sự thoải mái.
+              Một phần lớn các ý kiến ​​​​làm cho kinh ngạc
+              tạo.
             </span>
 
             <img className="my-6 md:px-36" src={caffeineTable} alt="" />
 
             <span className="text-sm md:text-base mt-4">
-              Standart filtre kahvelerin kafein oranı %1 iken, The Coffee’nin
-              kafein oranı son yapılan test sonucuna göre %2,32. Kısa bir
-              hesapla bir fincan filtre kahveden alacağınız kafein miktarı 150
-              mg iken The Coffee’den yapılmış bir fincan filtre kahvede bu
-              miktar 350 mg’lara yaklaşıyor.
+              Trong khi tỷ lệ caffein của cà phê phin tiêu chuẩn là 1%, The Coffee's
+              tỷ lệ caffein là 2,32% theo kết quả thử nghiệm mới nhất. Một đoạn ngắn
+              tính lượng caffein bạn sẽ nhận được từ một tách cà phê phin 150
+              mg trong một tách cà phê phin của The Coffee.
+              số tiền là gần 350 mg.
             </span>
           </div>
         </div>

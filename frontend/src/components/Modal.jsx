@@ -15,7 +15,7 @@ function Modal() {
             className="h-24 w-24 md:h-32 md:w-32 animate-pulse mx-auto"
             draggable="false"
           />
-          <span className="text-[#cda154] whitespace-nowrap py-2">Demleniyoruz...</span>
+          <span className="text-[#cda154] whitespace-nowrap py-2">Chúng tôi đang pha...</span>
         </div>
       </div>
       <div className="opacity-25 fixed inset-0 z-30 bg-black"></div>

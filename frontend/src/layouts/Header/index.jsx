@@ -28,7 +28,7 @@ function Header() {
       localStorage.removeItem("access-token");
       setIsLoggedIn(false);
       navigate("/");
-      setToastMsg({ isError: false, message: "Başarıyla çıkış yaptınız." });
+      setToastMsg({ isError: false, message: "Bạn đã đăng xuất thành công." });
     }
   };
 

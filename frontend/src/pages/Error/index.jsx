@@ -9,11 +9,11 @@ function Error() {
     <MainLayout>
       <div className="p-8 h-[540px] flex flex-col items-center">
         <h1 className="text-white text-5xl py-6">
-          <span className="text-[#cda154]">404</span> - Aradığın sayfayı
-          bulamadık!
+          <span className="text-[#cda154]">404</span> - Trang bạn đang tìm kiếm
+          chúng tôi không thể tìm thấy nó!
         </h1>
         <Link to="/" className="py-6 text-[#cda154]">
-          <Button name="Ana sayfaya dön" className="px-4" />
+          <Button name="Quay lại trang chủ" className="px-4" />
         </Link>
         <img src={coffeeCup} alt="" className="h-20 animate-pulse" />
       </div>

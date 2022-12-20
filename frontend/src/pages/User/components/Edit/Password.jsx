@@ -23,18 +23,18 @@ function Password() {
     },
     validationSchema: Yup.object({
       password: Yup.string()
-        .max(128, "Şifre 128 karakterden az olmalı.")
-        .min(6, "Şifre 6 karakterden fazla olmalı.")
-        .required("Bu alan zorunludur."),
+        .max(128, "Mật khẩu phải ít hơn 128 ký tự.")
+        .min(6, "Mật khẩu phải nhiều hơn 6 ký tự.")
+        .required("Trường này là bắt buộc."),
       newPassword: Yup.string()
-        .max(128, "Şifre 128 karakterden az olmalı.")
-        .min(6, "Şifre 6 karakterden fazla olmalı.")
+        .max(128, "Mật khẩu phải ít hơn 128 ký tự.")
+        .min(6, "Mật khẩu phải nhiều hơn 6 ký tự.")
         .required("Bu alan zorunludur."),
       newPasswordConfirm: Yup.string()
-        .max(128, "Şifre 128 karakterden az olmalı.")
-        .min(6, "Şifre 6 karakterden fazla olmalı.")
-        .oneOf([Yup.ref("newPassword"), null], "Şifreler uyuşmuyor.")
-        .required("Bu alan zorunludur."),
+        .max(128, "Mật khẩu phải ít hơn 128 ký tự.")
+        .min(6, "Mật khẩu phải nhiều hơn 6 ký tự.")
+        .oneOf([Yup.ref("newPassword"), null], "Mật khẩu không hợp lệ.")
+        .required("Trường này là bắt buộc."),
     }),
     validateOnChange: validateAfterSubmit,
     onSubmit: async (values, { resetForm }) => {
@@ -79,7 +79,7 @@ function Password() {
             </small>
           ) : null}
           <InputField
-            label="Mevcut Şifre"
+            label="Mật khẩu hiện tại"
             name="password"
             value={formik.values.password}
             type="password"
@@ -96,7 +96,7 @@ function Password() {
             </small>
           ) : null}
           <InputField
-            label="Yeni Şifre"
+            label="Mật khẩu mới"
             name="newPassword"
             value={formik.values.newPassword}
             type="password"
@@ -113,7 +113,7 @@ function Password() {
             </small>
           ) : null}
           <InputField
-            label="Yeni Şifre Tekrar"
+            label="Mật khẩu mới một lần nữa"
             name="newPasswordConfirm"
             value={formik.values.newPasswordConfirm}
             type="password"
@@ -127,7 +127,7 @@ function Password() {
         </div>
         <div>
           <Button
-            name="Değiştir"
+            name="Biến đổi"
             onClick={() => {
               setValidateAfterSubmit(true);
             }}

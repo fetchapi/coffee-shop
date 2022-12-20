@@ -21,13 +21,13 @@ function LoginForm() {
     },
     validationSchema: Yup.object({
       email: Yup.string()
-        .max(254, "E-mail 254 karakterden az olmalı.")
-        .email("Geçersiz mail adresi.")
-        .required("Bu alan zorunludur."),
+        .max(254, "Email phải ít hơn 254 ký tự.")
+        .email("Địa chỉ email không hợp lệ.")
+        .required("Trường này là bắt buộc."),
       password: Yup.string()
-        .max(128, "Şifre 128 karakterden az olmalı.")
-        .min(6, "Şifre 6 karakterden fazla olmalı.")
-        .required("Bu alan zorunludur."),
+        .max(128, "Mật khẩu phải ít hơn 128 ký tự.")
+        .min(6, "Mật khẩu phải nhiều hơn 6 ký tự.")
+        .required("Trường này là bắt buộc."),
     }),
     validateOnChange: validateAfterSubmit,
     onSubmit: async (values, { resetForm }) => {
@@ -39,7 +39,7 @@ function LoginForm() {
           setIsLoggedIn(true);
           setToastMsg({
             isError: false,
-            message: "Başarıyla giriş yaptınız.",
+            message: "Bạn đã đăng nhập thành công.",
           });
           navigate("/user");
         })
@@ -75,7 +75,7 @@ function LoginForm() {
         <small className="text-xs text-red-500">{formik.errors.password}</small>
       ) : null}
       <InputField
-        label="Şifre"
+        label="Mật khẩu"
         name="password"
         value={formik.values.password}
         type="password"
@@ -88,7 +88,7 @@ function LoginForm() {
       />
       <div className="w-full">
         <Button
-          name="Giriş"
+          name="Đăng nhập"
           onClick={() => {
             setValidateAfterSubmit(true);
           }}

@@ -24,24 +24,24 @@ function RegisterForm() {
     },
     validationSchema: Yup.object({
       name: Yup.string()
-        .max(20, "İsim 20 karakterden az olmalı.")
-        .required("Bu alan zorunludur."),
+        .max(20, "Tên phải ít hơn 20 ký tự.")
+        .required("Trường này là bắt buộc."),
       surname: Yup.string()
-        .max(20, "Soyad 20 karakterden az olmalı.")
-        .required("Bu alan zorunludur."),
+        .max(20, "Họ phải ít hơn 20 ký tự.")
+        .required("Trường này là bắt buộc."),
       email: Yup.string()
-        .max(254, "E-mail 254 karakterden az olmalı.")
-        .email("Geçersiz mail adresi.")
-        .required("Bu alan zorunludur."),
+        .max(254, "Email phải ít hơn 254 ký tự.")
+        .email("Địa chỉ email không hợp lệ.")
+        .required("Trường này là bắt buộc."),
       password: Yup.string()
-        .max(128, "Şifre 128 karakterden az olmalı.")
-        .min(6, "Şifre 6 karakterden fazla olmalı.")
-        .required("Bu alan zorunludur."),
+        .max(128, "Mật khẩu phải ít hơn 128 ký tự.")
+        .min(6, "Mật khẩu phải nhiều hơn 6 ký tự.")
+        .required("Trường này là bắt buộc."),
       confirmPassword: Yup.string()
-        .max(128, "Şifre 128 karakterden az olmalı.")
-        .min(6, "Şifre 6 karakterden fazla olmalı.")
-        .oneOf([Yup.ref("password"), null], "Şifreler uyuşmuyor.")
-        .required("Bu alan zorunludur."),
+        .max(128, "Mật khẩu phải ít hơn 128 ký tự.")
+        .min(6, "Mật khẩu phải nhiều hơn 6 ký tự.")
+        .oneOf([Yup.ref("password"), null], "Mật khẩu không hợp lệ.")
+        .required("Trường này là bắt buộc."),
     }),
     validateOnChange: validateAfterSubmit,
     onSubmit: async (values, { resetForm }) => {
@@ -73,7 +73,7 @@ function RegisterForm() {
         <small className="text-xs text-red-500">{formik.errors.name}</small>
       ) : null}
       <InputField
-        label="Ad"
+        label="Tên"
         name="name"
         value={formik.values.name}
         onChange={formik.handleChange}
@@ -87,7 +87,7 @@ function RegisterForm() {
         <small className="text-xs text-red-500">{formik.errors.surname}</small>
       ) : null}
       <InputField
-        label="Soyad"
+        label="Họ"
         name="surname"
         value={formik.values.surname}
         onChange={formik.handleChange}
@@ -115,7 +115,7 @@ function RegisterForm() {
         <small className="text-xs text-red-500">{formik.errors.password}</small>
       ) : null}
       <InputField
-        label="Şifre"
+        label="Mật khẩu"
         name="password"
         value={formik.values.password}
         type="password"
@@ -132,7 +132,7 @@ function RegisterForm() {
         </small>
       ) : null}
       <InputField
-        label="Şifre Tekrar"
+        label="Nhập lại mật khẩu"
         name="confirmPassword"
         value={formik.values.confirmPassword}
         type="password"
@@ -144,7 +144,7 @@ function RegisterForm() {
         }`}
       />
       <div className="w-full">
-        <Button name="Kayıt Ol" onClick={() => {setValidateAfterSubmit(true)}} />
+        <Button name="Đăng ký" onClick={() => {setValidateAfterSubmit(true)}} />
       </div>
     </form>
   );

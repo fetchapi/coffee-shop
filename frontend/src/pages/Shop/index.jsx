@@ -62,7 +62,7 @@ function Shop() {
           navigate("/login");
           setToastMsg({
             isError: true,
-            message: "Ürün almak için giriş yapın.",
+            message: "Đăng nhập để mua sản phẩm.",
           });
         }
       });

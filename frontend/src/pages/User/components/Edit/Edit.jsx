@@ -17,19 +17,19 @@ function Edit() {
           to="/user/edit/password"
           className="py-2.5 md:py-2 hover:bg-[#cda154] w-full"
         >
-          Kullanıcı Şifresi
+          Mật khẩu người dùng
         </Link>
         <Link
           to="/user/edit/email"
           className="py-2.5 md:py-2 hover:bg-[#cda154] w-full"
         >
-          Mail Adresi
+          Địa chỉ email
         </Link>
         <Link
           to="/user/edit/address"
           className="py-2.5 md:py-2 hover:bg-[#cda154] w-full"
         >
-          Teslimat Adresi
+          Địa chỉ giao hàng
         </Link>
       </div>
     </div>

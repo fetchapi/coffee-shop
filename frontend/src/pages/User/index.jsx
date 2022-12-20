@@ -35,7 +35,7 @@ function User() {
           setIsLoggedIn(false);
           setToastMsg({
             isError: false,
-            message: "Çıkış işleminiz gerçekleştirildi.",
+            message: "Thanh toán của bạn đã được hoàn thành.",
           });
         });
     })();
@@ -44,9 +44,9 @@ function User() {
   return (
     <MainLayout>
       <div className="flex flex-col justify-center items-center py-4 px-4">
-        <h1 className="text-2xl text-white pb-4">Hesabım</h1>
+        <h1 className="text-2xl text-white pb-4">Tài khoản của tôi</h1>
         <h1 className="text-sm text-white pb-8">
-          Hoş geldin <span className="text-[#cda154]">{user.name}</span>!
+          Chào mừng <span className="text-[#cda154]">{user.name}</span>!
         </h1>
         <div className="w-full md:w-3/6 flex h-96 border-[1.6px] rounded-xl">
           {location.pathname === "/user" && <UserMenu />}
