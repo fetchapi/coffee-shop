@@ -17,33 +17,33 @@ exports.sendMail = async (req, res) => {
 
     await transporter.sendMail({
       from: `${name} ${surname} <${email}>`, // sender address
-      to: "thecoffeeshopfs@gmail.com", // list of receivers
+      to: "kiemtienonline2357@gmail.com", // list of receivers
       subject: "Contact | The Coffee Shop", // Subject line
-      html: `<strong>Gönderen:</strong> ${name} ${surname}
+      html: `<strong>Người gửi:</strong> ${name} ${surname}
         <br>
-        <strong>Mail Adresi:</strong> ${email}
+        <strong>Địa chỉ email:</strong> ${email}
         <br>
-        <strong>Mesaj:</strong> ${message}`, // html body
+        <strong>Thông điệp:</strong> ${message}`, // html body
     });
 
     await transporter.sendMail({
-      from: '"The Coffee Shop ☕" <thecoffeeshopfs@gmail.com>', // sender address
+      from: '"The Coffee Shop ☕" <kiemtienonline2357@gmail.com>', // sender address
       to: email, // list of receivers
       subject: "Contact | The Coffee Shop", // Subject line
-      html: `<strong>Merhabalar!</strong> <br> 
+      html: `<strong>Xin chào!</strong> <br> 
       Sevgili <strong>${name} ${surname},</strong> 
       <br> 
-      Talebiniz tarafımıza ulaştı.
-      En yakın zamanda geri dönüş sağlayacağız. 🖤🚀
+      Yêu cầu của bạn đã đến với chúng tôi.
+      Chúng tôi sẽ cung cấp thông tin phản hồi càng sớm càng tốt. 🖤🚀
       <br>
       <br>
-      <em><strong>The Coffee Shop Ekibi</strong></em> ☕`, // html body
+      <em><strong>Quán cà phê Ekibi</strong></em> ☕`, // html body
     });
 
-    res.status(200).json({ status: "success", message: "Talebiniz alındı." });
+    res.status(200).json({ status: "success", message: "Yêu cầu của bạn đã được nhận." });
   } catch (err) {
     res
       .status(400)
-      .json({ status: "fail", message: "Talebiniz alınamadı.", error: err });
+      .json({ status: "fail", message: "Không thể nhận được yêu cầu của bạn.", error: err });
   }
 };

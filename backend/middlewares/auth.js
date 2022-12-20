@@ -7,7 +7,7 @@ const verifyToken = (req, res, next) => {
     req.body.token || req.query.token || req.headers["x-access-token"];
 
   if (!token) {
-    return res.status(403).send("Yetkilendirme icin token gerekli!");
+    return res.status(403).send("Yêu cầu mã thông báo để ủy quyền!");
   }
 
   try {
@@ -15,7 +15,7 @@ const verifyToken = (req, res, next) => {
     req.user = decoded;
 
   } catch (err) {
-    return res.status(401).send("Gecersiz token.");
+    return res.status(401).send("Mã không hợp lệ.");
     
   }
   return next();

@@ -12,11 +12,11 @@ exports.createArticle = async (req, res) => {
     });
     res
       .status(201)
-      .json({ status: "success", message: "İçerik oluşturuldu.", article });
+      .json({ status: "success", message: "Nội dung được tạo.", article });
   } catch (err) {
     res
       .status(400)
-      .json({ status: "fail", message: "İçerik oluşturulamadı.", error: err });
+      .json({ status: "fail", message: "Không thể tạo nội dung.", error: err });
   }
 };
 
@@ -40,7 +40,7 @@ exports.getArticles = async (req, res) => {
       currentPage: currentPage,
     });
   } else {
-    res.status(400).json({ status: "fail", message: "İçerik bulunamadı." });
+    res.status(400).json({ status: "fail", message: "Không tìm thấy nội dung." });
   }
 };
 
@@ -50,6 +50,6 @@ exports.getArticle = async (req, res) => {
   if (article) {
     res.status(200).json({ status: "success", article });
   } else {
-    res.status(400).json({ status: "fail", message: "İçerik bulunamadı." });
+    res.status(400).json({ status: "fail", message: "Không tìm thấy nội dung." });
   }
 };

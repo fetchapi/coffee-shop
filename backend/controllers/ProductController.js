@@ -12,11 +12,11 @@ exports.createProduct = async (req, res) => {
 
     res
       .status(201)
-      .json({ status: "success", message: "Ürün oluşturuldu.", product });
+      .json({ status: "success", message: "Sản phẩm đã được tạo ra.", product });
   } catch (err) {
     res
       .status(400)
-      .json({ status: "fail", message: "Ürün oluşturulamadı.", error: err });
+      .json({ status: "fail", message: "Sản phẩm không thể được tạo ra.", error: err });
   }
 };
 
@@ -28,6 +28,6 @@ exports.getProducts = async (req, res) => {
   } catch (err) {
     res
       .status(400)
-      .json({ status: "fail", message: "Ürünler bulunamadı.", error: err });
+      .json({ status: "fail", message: "Sản phẩm không tìm thấy.", error: err });
   }
 };

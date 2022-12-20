@@ -30,7 +30,7 @@ app.use('/mail', mailRoute);
 app.use('/product', productRoute);
 app.use('/cart', cartRoute);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);

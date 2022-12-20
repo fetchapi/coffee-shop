@@ -29,11 +29,11 @@ exports.addToCart = async (req, res) => {
     }
     res
       .status(201)
-      .json({ status: "success", message: "Ürün sepete eklendi." });
+      .json({ status: "success", message: "Sản phẩm đã được thêm vào giỏ hàng." });
   } catch (err) {
     res
       .status(500)
-      .json({ status: "fail", message: "Ürün sepete eklenemedi.", error: err });
+      .json({ status: "fail", message: "Không thể thêm sản phẩm vào giỏ hàng.", error: err });
   }
 };
 
@@ -54,14 +54,14 @@ exports.removeFromCart = async (req, res) => {
 
       res
         .status(200)
-        .json({ status: "success", message: "Ürün sepetten kaldırıldı." });
+        .json({ status: "success", message: "Sản phẩm đã bị xóa khỏi giỏ hàng." });
     } else {
-      res.status(400).json({ status: "fail", message: "Ürün bulunamadı." });
+      res.status(400).json({ status: "fail", message: "Sản phẩm không được tìm thấy." });
     }
   } catch (err) {
     res
       .status(400)
-      .json({ status: "fail", message: "Ürün silinemedi.", error: err });
+      .json({ status: "fail", message: "Không thể xóa sản phẩm.", error: err });
   }
 };
 
@@ -74,6 +74,6 @@ exports.getCart = async (req, res) => {
   } else {
     res
       .status(400)
-      .json({ status: "fail", message: "Sepet bulunamadı.", err: "no-cart" });
+      .json({ status: "fail", message: "Giỏ không tìm thấy.", err: "no-cart" });
   }
 };
